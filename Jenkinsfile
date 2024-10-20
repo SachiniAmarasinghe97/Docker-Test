@@ -34,11 +34,11 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            // Cleanup actions, such as stopping and removing the Docker container
-            bat 'docker stop node_app || true'  // Ensure it doesn’t fail if not running
-            bat 'docker rm node_app || true'
-        }
-    }
+    // post {
+    //     always {
+    //         // Cleanup actions, such as stopping and removing the Docker container
+    //         bat 'docker stop node_app || true'  // Ensure it doesn’t fail if not running
+    //         bat 'docker rm node_app || true'
+    //     }
+    // }
 }
